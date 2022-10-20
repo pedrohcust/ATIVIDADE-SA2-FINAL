@@ -1,0 +1,158 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:#97D700;
+    height: 46px;
+}
+
+.container {
+    max-width: 1920px;
+}
+
+.container-grid {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    width: 1200px;
+    display:inline-flex;
+    justify-content: space-between;
+    margin-right: 300px;
+}
+
+.menu a:hover {
+    background-color:#101820;
+    color:#97D700;
+
+}
+.menu a {
+    color:#101820;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    
+}
+
+#barras {
+    display: none;
+    
+}
+
+body{
+    background-color:#101820;
+}
+
+.login label{
+    font-size: 20px;
+    color:#97D700;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+.login input{
+    height: 30px;
+    width: 300px;
+}
+
+.botao-enviar{
+    
+    width: 460px;
+    color:#101820;
+    background-color:#97D700;
+    height: 35px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.campo-email{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 50px;
+    padding: 20px;
+    font-weight: bold;
+}
+.campo-senha{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    font-weight: bold;
+    
+
+}
+
+.login{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .cabecalho {
+        position: relative;
+    }
+    
+    .menu {
+        display: none;
+
+        position: absolute;
+        top: 80px;
+        right: 0px;
+
+        height: 400px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        background-color:#101820;
+        align-items: center;
+
+    }
+
+    .menu-ativo {
+        display: flex;
+    }
+
+    .conteudo-dicas {
+        flex-direction: column;
+    }
+
+    header {
+        background-color: #97D700;
+        
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+#barras {
+    display:inline-block;
+    position: absolute;
+    width: 4%;
+    margin-left: 640px;
+}
+
+}
